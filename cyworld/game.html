@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/game.css">
+    <script>
+        function startWord(){
+            const word = document.getElementById("word").innerText
+            console.log(word)
+            const lastword = word[word.length-1]
+
+            const myword = document.getElementById("myword").value;
+            const firstword = myword[0]
+
+            // 만약, firstword와 lastword가 같다면
+                // 결과란에 정답입니다를 띄운다
+                // 제시어를 입력값으로 바꿔준다
+                // 입력창을 비운다
+            // 다르다면(else)
+                // 결과란에 틀렸습니다를 띄운다
+                // 입력창을 비운다
+            if(firstword === lastword){
+                document.getElementById("result").innerText = "정답입니다"
+                document.getElementById("word").innerText = myword
+                document.getElementById("myword").value = ""
+            }else{
+                document.getElementById("result").innerText = "틀렸습니다"
+                document.getElementById("myword").value = ""
+            }
+            if(myword.length <= 1){
+                document.getElementById("result").innerText = "한글자 이상 입력해주세요"
+                document.getElementById("myword").value = ""
+            }
+            var input = document.getElementById("button"); 
+            input.addEventListener('keypress', function(key){ 
+                if(key.key == 'Enter'){ 
+                    var inputValue = input.value; 
+                    console.log(inputValue);
+                } 
+            })
+
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="header__title">
+                <div class="title">GAME</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <div class="divideLine"></div>
+        </div>
+        <div class="game__container">
+            <img src="./images/word.png" alt="끝말잇기">
+            <div class="game__title">끝말잇기</div>
+            <div class="game__subtitle">제시어 : <span id="word">코드캠프</span></div>
+            <div class="word__text">
+                <input type="text" id="myword" placeholder="단어를 입력하세요." class="text">
+                <input type="button" value="입력" class="button" onclick="startWord()" id="button">
+            </div>
+            <div id="result">결과!</div>
+        </div>
+        <div class="game__container">
+            <img src="./images/lotto.png" alt="로또">
+            <div class="game__title">LOTTO</div>
+            <div class="game__subtitle">버튼을 누르세요.</div>
+            <div class="lotto__text">
+                <div class="numberBox">
+                    <!-- &emsp; : 3칸 띄어쓰기 -->
+                    <!-- 3&emsp;5&emsp;10&emsp;24&emsp;30&emsp;34 -->
+                    <span>3</span>
+                    <span>5</span>
+                    <span>10</span>
+                    <span>24</span>
+                    <span>34</span>
+                </div>
+                <input type="button" value="Button" class="lotto__button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이벤트 변경 감지</title>
+    <script src="./07-signup.js"></script>
+    <style>
+        input{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="email" placeholder="이메일을 입력해 주세요" oninput="checkValidation()">
+    <input type="password" name="password1" id="password1" placeholder="비밀번호를 입력해 주세요" oninput="checkValidation()">
+    <input type="password" name="password2" id="password2" placeholder="비밀번호를 확인해 주세요" oninput="checkValidation()">
+    <button id="mybutton" disabled="true">회원가입</button>
+    
+    <!-- 실행하려면 함수뒤에 ()를 꼭 포함시켜야 함 => checkValidation() -->
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>코드캠프 회원가입</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./final.css">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>코드캠프 회원가입</h2>
+
+        <input type="text" class="info" placeholder="이메일을 입력해주세요."><br>
+        <input type="text" class="info" placeholder="이름을 입력해주세요."><br>
+        <input type="password" class="info" placeholder="비밀번호를 입력해 주세요."><br>
+        <input type="password" class="info" placeholder="비밀번호를 다시 입력해 주세요"><br>
+
+        <input type="text" id="phone1" size="3" maxlength="3" class="phone" oninput="changePhone1()">   -   
+        <input type="text" id="phone2" size="4" maxlength="4" class="phone" oninput="changePhone2()">   -   
+        <input type="text" id="phone3" size="4" maxlength="4" class="phone" >
+        <br><br>
+
+        <div class="submit">
+            <div class="submit__number">
+                <div id="number">000000</div>
+                <button id="btn" onclick="getToken()" class="number__but" disabled="true">인증번호 전송</button>
+            </div>
+            <br>
+            <div class="submit__myTime">
+                <div id="myTime">3:00</div>
+                <button id="end" class="number__but" disabled="true">인증확인</button>
+            </div>
+        </div>
+        <br>
+
+        <select>
+            <option disabled selected>지역을 선택하세요.</option>
+            <option>서울</option>
+            <option>경기</option>
+            <option>인천</option>
+        </select>
+        
+        <br><br>
+        <div class="gender">
+            <input type="radio" class="genderx" name="gender"> <span>여성</span>
+                                     
+            <input type="radio" name="gender"> 남성
+        </div>
+        
+        <br><br>
+        
+        <hr>
+        <br>
+        <button disabled="true">가입하기</button>
+    
+    </div>
+
+</body>
+</html>

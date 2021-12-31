@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>4일차 과제</title>
+    <link href="./day4.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script src="./day4.js"></script>
+</head>
+<body>
+    <div class="title" id="titlebar">
+        4일차 self check
+    </div>
+    <div class="question" id="q_func1">
+        <div class="question__title">
+            함수 - 정의
+        </div>
+        <div class="question__subtitle" id="error_func1">
+            빈 칸에 알맞은 답을 입력하세요
+        </div>
+        <div class="question__body">
+            <div class="subquestion">
+                함수는 우리가 만드는 <input class="question__answer" id="func__1" type="text" maxlength="2">이다.
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="q_func2">
+        <div class="question__title">
+            함수 - 작성 방법
+        </div>
+        <div class="question__subtitle" id="error_func2">
+            예시를 보고 빈 칸에 알맞은 답을 입력하세요
+        </div>
+        <div class="question__body">
+            <div class="question__body__qtext">함수를 작성하는 방법에는 총 3가지가 있으며, 아래는 그 예시입니다.<br>각 예시에 맞게 이름을 입력해 주세요</div>
+            <div class="func__wrapper">
+                <div class="func__wrapper__body">
+                    <div class="func__line1">function hello() {</div>
+                    <div class="func__line2">    alert("안녕하세요")</div>
+                    <div class="func__line3">}</div>
+                </div>
+                <div class="func__wrapper__body">
+                    <div class="func__line1">const hello = function() {</div>
+                        <div class="func__line2">    alert("안녕하세요")</div>
+                        <div class="func__line3">}</div>
+                </div>
+                <div class="func__wrapper__body">
+                    <div class="func__line1">const hello = () => {</div>
+                        <div class="func__line2">    alert("안녕하세요")</div>
+                        <div class="func__line3">}</div>
+                </div>
+            </div>
+            <div class="func__answer">
+                <div class="answer__wrapper">
+                    함수<input class="question__answer" id="func__3" type="text">식
+                </div>
+                <div class="answer__wrapper">
+                    함수<input class="question__answer" id="func__4" type="text">식
+                </div>
+                <div class="answer__wrapper">
+                    <input class="question__answer" id="func__5" type="text">함수
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="q_insert">
+        <div class="question__title">
+            내장 함수 - 정의
+        </div>
+        <div class="question__subtitle" id="error_insert">
+            빈 칸에 알맞은 답을 입력하세요
+        </div>
+        <div class="question__body">
+            <div class="subquestion">
+                자주 사용되는 <input class="question__answer" id="insert__1" type="text">를
+            </div>
+            <div class="subquestion">
+                자바스크립트에 <input class="question__answer" id="insert__2" type="text">하여
+            </div>
+            <div class="subquestion">
+                편리하게 이용할 수 있도록 한 것을 <strong> "내장 함수" </strong>라고 한다.
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="q_set">
+        <div class="question__title">
+            자주 사용되는 내장 함수
+        </div>
+        <div class="question__subtitle" id="error_set">
+            빈 칸에 알맞은 답을 입력하세요
+        </div>
+        <div class="question__body">
+            <div class="subquestion">
+                가장 자주 사용되는 자바스크립트 내장 함수는
+            </div>
+            <div class="subquestion">
+                시간 <input class="question__answer" id="set__1" type="text"> 함수인, <b>setTimeout</b>과
+            </div>
+            <div class="subquestion">
+                시간 <input class="question__answer" id="set__2" type="text"> 함수인, <b>setInterval</b>이 있다.
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="q_time">
+        <div class="question__title">
+            컴퓨터의 시간 단위
+        </div>
+        <div class="question__subtitle" id="error_time">
+            예시를 보고 빈 칸에 알맞은 답을 입력하세요
+        </div>
+        <div class="question__body">
+            <div class="subquestion">
+                우리는 시간의 기본 단위는 1초이지만, 컴퓨터는 1ms가 기본 단위이다.
+            </div>
+            <div class="subquestion">
+                따라서, 1분을 컴퓨터에게 입력하려면 <input class="question__answer" id="time" type="text" maxlength="5">ms로 입력해야 한다
+            </div>
+        </div>
+    </div>
+
+    <button class="submitbtn" onclick="submit()">검사</button>
+</body>
+</html>

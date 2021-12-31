@@ -1,0 +1,103 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 670px;height: 960px;
+    border: 1px solid #aacdff;
+    background-color: #fff;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, .25);
+    border-radius: 20px;
+    position: relative;
+    left: 50%;top: 60px;
+    transform: translateX(-50%);
+}
+.container{
+    width: 470px;height: 820px;
+    margin: 70px 100px;
+}
+
+h2{
+    color: #0068FF;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 47px;
+    margin-bottom: 60px;
+}
+
+.info{
+    border: none;
+    margin-bottom: 25px;
+    width: 100%;height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.phone{
+    width:25%;height: 40px;
+    margin: 0px 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit__number,.submit__myTime{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#number, #myTime{
+    color: #0068FF;
+    margin-right: 15px;
+    line-height: 40px;
+}
+.number__but{
+    width: 120px;height: 35px;
+    line-height: 30px;
+}
+
+select{
+    width: 100%;height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    color: gray;
+    padding-left: 10px;
+}
+
+.gender{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gender span{
+    margin-right: 15px;
+}
+
+hr{border: 1px solid lightgray;}
+button{
+    color: gray;
+    width: 470px;height: 75px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

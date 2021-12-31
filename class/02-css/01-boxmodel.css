@@ -1,0 +1,25 @@
+.a1{
+    width: 100px;height: 100px;
+    background-color: tomato;
+    border: 1px solid lightseagreen;
+}
+
+.pat{
+    width: 500px;height: 500px;
+    border: 1px solid crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* dispaly:flex 는 여러태그를 하나로 묶어서 정렬 */
+/* position은 잘 사용하지 않음
+    position :absolute = 상위 박스 기준으로 상대 위치
+    position :relative = 박스의 절대 위치
+    position :fixed = 화면을 기준으로 절대 위치
+*/
